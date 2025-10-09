@@ -6,7 +6,7 @@
     assign media_width_desktop = '100vw'
   endif
   assign media_width_mobile = '100vw'
-  assign sizes = '(min-width: 750px) ' | append: media_width_desktop | append: ', ' | append: media_width_mobile
+  assign sizes = '(min-width: 768px) ' | append: media_width_desktop | append: ', ' | append: media_width_mobile
   assign widths = '832, 1200, 1600, 1920, 2560, 3840'
 
   assign has_image_1 = false
@@ -300,7 +300,7 @@
     justify-content: var(--horizontal-alignment);
     z-index: var(--layer-base);
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       align-items: var(--vertical-alignment);
     }
   }

@@ -154,7 +154,7 @@
     cursor: default;
     pointer-events: none;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --quick-add-offset: var(--padding-md);
 
       display: var(--quick-add-display, flex);
@@ -182,7 +182,7 @@
     overflow: hidden;
     border-radius: 100px;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: none;
       padding: var(--padding-xs) var(--padding-sm);
     }
@@ -199,7 +199,7 @@
     grid-column: 1 / span 1;
     animation: none;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       /* offset button padding to show a round button in a collapsed state */
       margin-inline: calc(var(--padding-sm) * -1);
       padding-inline: var(--padding-xs);
@@ -213,7 +213,7 @@
     justify-self: end;
     line-height: 1;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       width: 0;
     }
   }
@@ -233,7 +233,7 @@
     .quick-add__button:is(:focus, :hover) .add-to-cart-text {
       gap: var(--gap-2xs);
 
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 768px) {
         /* offset button padding to show a round button in a collapsed state */
         margin-inline: 0;
         padding-inline: 0;

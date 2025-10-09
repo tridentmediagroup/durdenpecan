@@ -158,7 +158,7 @@
       }
 
       /* Desktop constraint wrapper sizing */
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 768px) {
         .product-media-constraint-wrapper {
           width: min(100%, calc(var(--constrained-height) * {{ block_settings.aspect_ratio }}));
         }
@@ -469,10 +469,10 @@
                   %}
                   {{
                     media.preview_image
-                    | image_url: width: 1024
+                    | image_url: width: 768
                     | image_tag:
                       loading: 'lazy',
-                      sizes: 'auto, 110, (min-width: 750px) 160',
+                      sizes: 'auto, 110, (min-width: 768px) 160',
                       widths: '240, 352, 832, 1200',
                       alt: media.alt,
                       style: focal_point_style
@@ -578,7 +578,7 @@
     flex: inherit;
   }
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 767px) {
     .dialog-zoomed-gallery {
       /* Prevent scroll wheel or swipe scrolling */
       overscroll-behavior: none;

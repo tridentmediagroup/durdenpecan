@@ -9,7 +9,7 @@
 <img
   srcset="
     {% if image.width >= 350 %}{{ image | image_url: width: 350 }} 350w,{% endif %}
-    {% if image.width >= 750 %}{{ image | image_url: width: 750 }} 750w,{% endif %}
+    {% if image.width >= 768 %}{{ image | image_url: width: 768 }} 768w,{% endif %}
     {% if image.width >= 1100 %}{{ image | image_url: width: 1100 }} 1100w,{% endif %}
     {% if image.width >= 1500 %}{{ image | image_url: width: 1500 }} 1500w,{% endif %}
     {{ image | image_url }} {{ image.width }}w
