@@ -81,6 +81,37 @@ Horizon runs [Theme Check](#Theme-Check) on every commit via [Shopify/theme-chec
 
 We are not accepting contributions to Horizon at this time.
 
+## 🧑‍💻 Local Development Workflow
+
+This theme is managed with Git **outside of the Shopify GitHub integration**. 
+
+All development happens locally using the Shopify CLI.
+
+#### Branching & Versioning
+- The **`main`** branch always mirrors the **published theme**.
+- All work happens on **feature branches** (`feature/<name>`), then merges into `main` via pull requests.
+- Each deployment to the live store is marked with a **Git tag** (`v1.x-live`).
+
+#### Common Commands
+```bash
+# Pull the current live theme
+shopify theme pull --store yourstore.myshopify.com --theme <live-theme-id>
+
+# Commit and tag the live sync
+git add .
+git commit -m "Sync from live store"
+git tag v1.x-live
+
+# Create a new feature branch
+git checkout -b feature/<short-description>
+
+# Merge approved work into main
+git checkout main
+git merge feature/<short-description>
+
+# Push updates for preview
+shopify theme push --store yourstore.myshopify.com --theme <dev-theme-id>
+```
 ## License
 
 Copyright (c) 2025-present Shopify Inc. See [LICENSE](/LICENSE.md) for further details.
