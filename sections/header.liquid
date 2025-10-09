@@ -413,7 +413,7 @@
     border-bottom: var(--border-bottom-width) solid var(--color-border);
   }
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 767px) {
     .header__row--top:not(.divider--page-width),
     .header__row--top.divider--page-width .header__columns {
       border-bottom-width: var(--border-bottom-width-mobile);
@@ -421,7 +421,7 @@
   }
 
   .header__row.divider--page-width:not(.section--page-width) .header__columns {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding-inline-start: 0;
       padding-inline-end: 0;
       margin-inline-start: var(--page-margin);
@@ -434,7 +434,7 @@
     align-items: center;
 
     /* on mobile, header__column nodes are ignored to create a new grid-template-area based on all visible content */
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       display: contents;
     }
   }
@@ -488,7 +488,7 @@
 
     /* If there is no center column, make the column the menu is in grow eagerly */
     &:where(:not(:has(.header__column--center))) {
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 768px) {
         --header-template-columns: var(--header-left) var(--header-right);
 
         grid-template-areas: 'left right';
@@ -507,7 +507,7 @@
       }
     }
 
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       --header-template-columns: var(--header-mobile-bookend) var(--header-mobile-bookend) 1fr
         var(--header-mobile-bookend) var(--header-mobile-bookend);
 

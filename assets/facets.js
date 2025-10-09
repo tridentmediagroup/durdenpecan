@@ -594,7 +594,7 @@ class SortingFilterComponent extends Component {
       this.closest('facets-form-component') || this.closest('.shopify-section')?.querySelector('facets-form-component');
 
     if (!(facetsForm instanceof FacetsFormComponent)) return;
-    const isMobile = window.innerWidth < 750;
+    const isMobile = window.innerWidth < 768;
 
     const shouldDisable = this.dataset.shouldUseSelectOnMobile === 'true';
 

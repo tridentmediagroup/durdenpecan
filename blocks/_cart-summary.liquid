@@ -67,7 +67,7 @@
     top: 0;
     align-self: start;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding: var(--padding-5xl);
       grid-row: 1 / -1;
     }
@@ -78,11 +78,11 @@
   }
 
   .cart__summary-container {
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       border: none;
     }
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: grid;
       grid-template-rows: subgrid;
       grid-row: 1 / -1;
@@ -97,7 +97,7 @@
   .cart__container--extend {
     height: 100%;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       border-right: none;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
@@ -106,7 +106,7 @@
 
   /* If extend is on, only include top and bottom borders when the border radius is 0. */
   .cart__container--extend:not(.has-border-radius) {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       border-top: none;
       border-bottom: none;
     }
@@ -116,7 +116,7 @@
     height: 100%;
     padding: var(--padding-md) 0 var(--padding-4xl);
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       grid-row: 2 / -1;
       padding-inline: var(--page-margin);
       width: var(--sidebar-width);
@@ -128,7 +128,7 @@
     border-radius: var(--border-radius);
   }
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 767px) {
     .inherit-parent-scheme--mobile {
       --color-background: inherit;
       --color-background-rgb: inherit;

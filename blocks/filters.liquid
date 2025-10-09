@@ -446,7 +446,7 @@
 
 {% stylesheet %}
   .collection-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --facets-vertical-col-width: 6;
     }
 
@@ -456,20 +456,20 @@
   }
 
   .facets-block-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       margin: var(--facets-margin);
       grid-column: var(--grid-column--desktop);
     }
   }
 
   .facets-block-wrapper--vertical {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       grid-column: var(--grid-column--desktop);
     }
   }
 
   .facets-block-wrapper--vertical + .facets-toggle {
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       margin: 0;
     }
   }
@@ -486,7 +486,7 @@
   }
 
   dialog-component.facets-block-wrapper:not(:has(.facets--drawer[open])) {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -529,7 +529,7 @@
     padding-block: 0;
 
     &:not(.facets--drawer) {
-      @media screen and (min-width: 750px) {
+      @media screen and (min-width: 768px) {
         padding-inline: var(--padding-inline-start) var(--padding-inline-end);
         width: 100%;
         max-width: 100%;
@@ -540,7 +540,7 @@
   .facets--horizontal {
     display: none;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding-block: var(--padding-block-start) var(--padding-block-end);
       display: flex;
       align-items: center;
@@ -559,7 +559,7 @@
   .facets--vertical {
     display: none;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding-block: 0 var(--padding-block-end);
       display: block;
       position: static;
@@ -573,7 +573,7 @@
   }
 
   .collection-wrapper:has(.collection-wrapper--full-width) .facets--vertical:not(.facets--drawer) {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding-inline-start: max(var(--padding-sm), var(--padding-inline-start));
     }
   }
@@ -592,7 +592,7 @@
   }
 
   .facets.facets-controls-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       grid-column: column-1 / column-12;
       color: rgb(var(--color-foreground-rgb) / var(--opacity-70));
       gap: 0 var(--facets-form-horizontal-gap);
@@ -601,7 +601,7 @@
   }
 
   .collection-wrapper:has(.product-grid-mobile--large) .facets-mobile-wrapper.facets-controls-wrapper {
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -626,7 +626,7 @@
   }
 
   .facets--horizontal .facets__form-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;
       height: auto;
     }
@@ -640,20 +640,20 @@
   }
 
   .facets--horizontal .facets__form {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       flex-flow: row nowrap;
       height: auto;
     }
   }
 
   .facets:not(.facets--drawer) .facets__filters-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       margin-inline-end: var(--margin-md);
     }
   }
 
   .facets--horizontal .facets__filters-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       max-width: 60%;
       display: flex;
       flex-wrap: wrap;
@@ -668,7 +668,7 @@
     --variant-picker-swatch-height: 32px;
     --icon-opacity: 0.5;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --variant-picker-swatch-width: 26px;
       --variant-picker-swatch-height: 26px;
     }
@@ -693,7 +693,7 @@
   }
 
   .facets--horizontal .facets__summary {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       font-size: var(--font-paragraph--size);
       justify-content: flex-start;
       height: var(--minimum-touch-target);
@@ -733,19 +733,19 @@
   }
 
   .facets:not(.facets--drawer) .facets__inputs-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       gap: var(--gap-sm);
     }
   }
 
   .facets--horizontal .facets__inputs .show-more {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: contents;
     }
   }
 
   .facets--horizontal .facets__inputs-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       max-height: var(--facets-horizontal-max-input-wrapper-height);
       scrollbar-width: none;
       -ms-overflow-style: none;
@@ -762,7 +762,7 @@
     margin-inline: calc(var(--padding-sm) * -1);
   }
 
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 767px) {
     .facets__inputs:has(.show-more) .facets__inputs-wrapper {
       padding-block: var(--padding-sm);
       padding-inline: var(--padding-sm);
@@ -777,12 +777,12 @@
     gap: var(--facets-mobile-gap);
     flex-direction: column;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       gap: var(--gap-sm);
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .facets--vertical .facets__inputs-wrapper .facets__inputs-list--swatches {
       gap: var(--gap-sm);
     }
@@ -806,13 +806,13 @@
     grid-template-columns: repeat(auto-fit, minmax(var(--min-column-width), 1fr));
     gap: var(--gap-sm);
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --min-column-width: 50px;
     }
   }
 
   .facets-block-wrapper:not(.facets-block-wrapper--vertical) .facets__inputs-list--grid {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       width: var(--facets-grid-panel-width);
     }
   }
@@ -829,7 +829,7 @@
 
     gap: var(--show-more-gap);
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --show-more-icon-size: 16px;
       --show-more-gap: 6px;
     }
@@ -852,13 +852,13 @@
 
   .facets:not(.facets--drawer) .facets__panel,
   .facets-controls-wrapper .facets__panel {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       padding: 0;
     }
   }
 
   .facets--horizontal .facets__panel {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       position: relative;
     }
   }
@@ -875,7 +875,7 @@
 
   .facets--horizontal .facets__panel-content,
   .sorting-filter__options {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       border-radius: var(--style-border-radius-popover);
       position: absolute;
       top: 100%;
@@ -901,7 +901,7 @@
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .facets:not(.facets--drawer) :is(.facets__item, .sorting-filter)::before {
       width: 100%;
     }
@@ -912,7 +912,7 @@
     }
   }
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 768px) {
     .facets--vertical .facets__item:not(:first-of-type)::before,
     .facets--vertical .sorting-filter::before {
       content: '';
@@ -945,7 +945,7 @@
     color: var(--color-foreground);
     cursor: pointer;
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       margin-inline-end: var(--margin-2xs);
     }
   }
@@ -956,7 +956,7 @@
   }
 
   .facets--horizontal .products-count-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       margin-left: auto;
       flex-shrink: 0;
@@ -981,7 +981,7 @@
   }
 
   :is(.facets--horizontal, .facets--vertical) .facets__title-wrapper {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -995,7 +995,7 @@
     align-items: center;
     gap: var(--gap-xs);
 
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       --variant-picker-swatch-width: 26px;
       --variant-picker-swatch-height: 26px;
     }
@@ -1027,13 +1027,13 @@
     color: var(--color-foreground);
     height: fit-content;
 
-    @media screen and (max-width: 749px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
 
   .facets--horizontal .facets__panel .facets__status:has(:not(:empty)) {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       margin-inline-start: var(--margin-xs);
       margin-inline-end: var(--margin-xs);
@@ -1042,13 +1042,13 @@
 
   /* Horizontal filter style */
   .facets--horizontal .facets__form {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       gap: 0 var(--facets-form-horizontal-gap);
     }
   }
 
   .collection-wrapper:has(> .facets--horizontal) .facets__panel[open] {
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 768px) {
       z-index: var(--facets-open-z-index);
     }
   }

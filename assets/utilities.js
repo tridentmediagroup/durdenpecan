@@ -336,7 +336,7 @@ export function isPointWithinElement(x, y, element) {
  * A media query for large screens
  * @type {MediaQueryList}
  */
-export const mediaQueryLarge = matchMedia('(min-width: 750px)');
+export const mediaQueryLarge = matchMedia("(min-width: 768px)");
 
 /**
  * Check if the current breakpoint is mobile
@@ -434,22 +434,29 @@ export function getVisibleElements(root, elements, ratio = 1, axis) {
   const rootRect = root.getBoundingClientRect();
 
   return elements.filter((element) => {
-    const { width, height, top, right, left, bottom } = element.getBoundingClientRect();
+    const { width, height, top, right, left, bottom } =
+      element.getBoundingClientRect();
 
     if (ratio < 1) {
       const intersectionLeft = Math.max(rootRect.left, left);
       const intersectionRight = Math.min(rootRect.right, right);
-      const intersectionWidth = Math.max(0, intersectionRight - intersectionLeft);
+      const intersectionWidth = Math.max(
+        0,
+        intersectionRight - intersectionLeft
+      );
 
-      if (axis === 'x') {
+      if (axis === "x") {
         return width > 0 && intersectionWidth / width >= ratio;
       }
 
       const intersectionTop = Math.max(rootRect.top, top);
       const intersectionBottom = Math.min(rootRect.bottom, bottom);
-      const intersectionHeight = Math.max(0, intersectionBottom - intersectionTop);
+      const intersectionHeight = Math.max(
+        0,
+        intersectionBottom - intersectionTop
+      );
 
-      if (axis === 'y') {
+      if (axis === "y") {
         return height > 0 && intersectionHeight / height >= ratio;
       }
 
@@ -461,12 +468,12 @@ export function getVisibleElements(root, elements, ratio = 1, axis) {
     }
 
     const isWithinX = left >= rootRect.left && right <= rootRect.right;
-    if (axis === 'x') {
+    if (axis === "x") {
       return isWithinX;
     }
 
     const isWithinY = top >= rootRect.top && bottom <= rootRect.bottom;
-    if (axis === 'y') {
+    if (axis === "y") {
       return isWithinY;
     }
 
@@ -481,11 +488,11 @@ export function getIOSVersion() {
   if (!isIOS) return null;
 
   const version = userAgent.match(/OS ([\d_]+)/)?.[1];
-  const [major, minor] = version?.split('_') || [];
+  const [major, minor] = version?.split("_") || [];
   if (!version || !major) return null;
 
   return {
-    fullString: version.replace('_', '.'),
+    fullString: version.replace("_", "."),
     major: parseInt(major, 10),
     minor: minor ? parseInt(minor, 10) : 0,
   };
@@ -517,34 +524,48 @@ function getCardsToAnimate(grid, cards) {
   if (visibleHeight <= 0) return 0;
 
   /** @type {import('product-card').ProductCard | null} */
-  const cardSample = itemSample.querySelector('product-card');
+  const cardSample = itemSample.querySelector("product-card");
   const gridStyle = getComputedStyle(grid);
 
-  const galleryAspectRatio = cardSample?.refs?.cardGallery?.style.getPropertyValue('--gallery-aspect-ratio') || '';
+  const galleryAspectRatio =
+    cardSample?.refs?.cardGallery?.style.getPropertyValue(
+      "--gallery-aspect-ratio"
+    ) || "";
   let aspectRatio = parseFloat(galleryAspectRatio) || 0.5;
-  if (galleryAspectRatio?.includes('/')) {
-    const [width = '1', height = '2'] = galleryAspectRatio.split('/');
+  if (galleryAspectRatio?.includes("/")) {
+    const [width = "1", height = "2"] = galleryAspectRatio.split("/");
     aspectRatio = parseInt(width, 10) / parseInt(height, 10);
   }
 
-  const cardGap = parseInt(cardSample?.refs?.productCardLink?.style.getPropertyValue('--product-card-gap') || '') || 12;
-  const gridGap = parseInt(gridStyle.getPropertyValue('--product-grid-gap')) || 12;
+  const cardGap =
+    parseInt(
+      cardSample?.refs?.productCardLink?.style.getPropertyValue(
+        "--product-card-gap"
+      ) || ""
+    ) || 12;
+  const gridGap =
+    parseInt(gridStyle.getPropertyValue("--product-grid-gap")) || 12;
 
   // Assume only a couple of lines of text in the card details (title and price).
   // If the title wraps into more lines, we might just animate more cards, but that's fine.
   const detailsSize = ((parseInt(gridStyle.fontSize) || 16) + 2) * 2;
 
-  const isMobile = window.innerWidth < 750;
+  const isMobile = window.innerWidth < 768;
 
   // Always use the zoom-out state card width
   const cardWidth = isMobile ? Math.round((gridRect.width - gridGap) / 2) : 100;
-  const cardHeight = Math.round(cardWidth / aspectRatio) + cardGap + detailsSize;
+  const cardHeight =
+    Math.round(cardWidth / aspectRatio) + cardGap + detailsSize;
 
   // Calculate the number of cards that fit in the visible area:
   // - The width estimation is pretty accurate, we can ignore decimals.
   // - The height estimation needs to account for peeking rows, so we round up.
-  const columnsInGrid = isMobile ? 2 : Math.floor((gridRect.width + gridGap) / (cardWidth + gridGap));
-  const rowsInGrid = Math.ceil((visibleHeight - gridGap) / (cardHeight + gridGap));
+  const columnsInGrid = isMobile
+    ? 2
+    : Math.floor((gridRect.width + gridGap) / (cardWidth + gridGap));
+  const rowsInGrid = Math.ceil(
+    (visibleHeight - gridGap) / (cardHeight + gridGap)
+  );
 
   return columnsInGrid * rowsInGrid;
 }
