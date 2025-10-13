@@ -1,3 +1,5 @@
+{% comment %} {% assign categories = article.metafields.blog.category.list? %} {% endcomment %}
+
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div class="section color-{{ section.settings.color_scheme }}">
   <div
@@ -14,9 +16,22 @@
     "
   >
     <header>
+      {% comment %} {%- content_for 'block', id: 'blog-post-category', type: 'text' %} {% endcomment %}
       {%- content_for 'block', id: 'blog-post-title', type: 'text' %}
       {%- content_for 'block', id: 'blog-post-details', type: '_blog-post-info-text' %}
     </header>
+
+
+      {% comment %} {% for category in categories %}
+        {% case category.type %}
+          {% when 'metaobject' %}
+            {%- assign meta = category.value -%}
+              <a href="{{ meta.system.url }}">{{ meta.fields.title.value }}</a>
+          {% else %}
+            {{ category.type }}
+        {% endcase %}
+      {% endfor %} {% endcomment %}
+
 
     {%- if article.image -%}
       {%- content_for 'block', id: 'blog-post-image', type: '_blog-post-featured-image', image: article.image %}

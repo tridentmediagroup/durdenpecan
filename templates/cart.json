@@ -7,7 +7,7 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "sections": {
     "cart-section": {
       "type": "main-cart",
@@ -16,9 +16,9 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "Cart",
-            "show_count": true,
-            "type_preset": "h4",
+            "title": "Shopping Cart",
+            "show_count": false,
+            "type_preset": "h1",
             "alignment": "left",
             "padding-block-start": 0,
             "padding-block-end": 0,
@@ -35,7 +35,7 @@
             "image_ratio": "portrait",
             "dividers": true,
             "vendor": false,
-            "padding-block-start": 0,
+            "padding-block-start": 50,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -105,11 +105,11 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>You may also like</h3>",
+                "text": "<h2>You may also like...</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h4",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "",
                 "line_height": "normal",

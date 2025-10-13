@@ -9,18 +9,17 @@
  */
 {
   "sections": {
-    "section": {
-      "type": "main-blog-post",
+    "main": {
+      "type": "main-blog",
       "blocks": {
-        "blog-post-title": {
+        "title": {
           "type": "text",
           "name": "Title",
-          "static": true,
           "settings": {
-            "text": "<h1>{{ closest.article.title }}</h1>",
-            "width": "100%",
+            "text": "<h1>Our Favorite Pecan Recipes</h1>",
+            "width": "fit-content",
             "max_width": "narrow",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-primary--family)",
             "font_size": "",
@@ -32,225 +31,89 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-start": 50,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "blog-post-details": {
-          "type": "_blog-post-info-text",
-          "name": "Details",
-          "static": true,
+        "text_TijkcR": {
+          "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "show_date": true,
-            "show_author": false,
-            "type_preset": "",
-            "alignment": "center",
-            "show_alignment": true,
-            "padding-block-start": 24,
-            "padding-block-end": 0
-          },
-          "blocks": {}
-        },
-        "blog-post-image": {
-          "type": "_blog-post-featured-image",
-          "disabled": true,
-          "static": true,
-          "settings": {
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "blog-post-content": {
-          "type": "_blog-post-content",
-          "disabled": true,
-          "static": true,
-          "settings": {},
-          "blocks": {}
-        }
-      },
-      "settings": {
-        "content_direction": "column",
-        "gap": 50,
-        "color_scheme": "",
-        "padding-block-start": 50,
-        "padding-block-end": 50
-      }
-    },
-    "divider_NLjV6X": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "",
-        "section_width": "full-width",
-        "thickness": 1,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 16,
-        "padding-block-end": 16
-      }
-    },
-    "section_Xpgj3E": {
-      "type": "section",
-      "blocks": {
-        "group_bEwCi8": {
-          "type": "group",
-          "name": "t:names.group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "image_6kTRcB": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "{{ closest.article.image }}",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "custom",
-                "custom_width": 80,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "image_6kTRcB"
-          ]
-        },
-        "group_Pkb7Fx": {
-          "type": "group",
-          "name": "t:names.group",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
+            "text": "<p>Explore our favorite pecan recipes — from classic desserts to savory snacks — all made with fresh, Georgia-grown Durden Pecans.</p>",
             "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 50,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
+          "blocks": {}
+        },
+        "static-blog-post-card": {
+          "type": "_blog-post-card",
+          "static": true,
+          "settings": {
+            "alignment": "left"
+          },
           "blocks": {
-            "text_DFX7YV": {
-              "type": "text",
-              "name": "t:names.text",
+            "heading": {
+              "type": "_heading",
+              "name": "t:names.title",
+              "static": true,
               "settings": {
-                "text": "{{ closest.article.excerpt }}",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "type_preset": "h2",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
+                "color": "var(--color-foreground-heading)",
+                "text": "",
+                "read_only": true,
+                "alignment": "left",
+                "show_alignment": false,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 10,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "text_iLm8yG": {
-              "type": "text",
-              "name": "t:names.text",
+            "blog-post-details": {
+              "type": "_blog-post-info-text",
+              "name": "t:names.details",
+              "static": true,
               "settings": {
-                "text": "{{ closest.article.content }}",
-                "width": "100%",
-                "max_width": "normal",
+                "show_date": true,
+                "show_author": false,
+                "type_preset": "",
                 "alignment": "left",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "content": {
+              "type": "_blog-post-description",
+              "static": true,
+              "settings": {
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -259,57 +122,38 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 16,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "image": {
+              "type": "_blog-post-image",
+              "static": true,
+              "settings": {
+                "height": "large",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 4
               },
               "blocks": {}
             }
           },
-          "block_order": [
-            "text_DFX7YV",
-            "text_iLm8yG"
-          ]
+          "block_order": []
         }
       },
       "block_order": [
-        "group_bEwCi8",
-        "group_Pkb7Fx"
+        "title",
+        "text_TijkcR"
       ],
-      "name": "t:names.custom_section",
       "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 40,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
         "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 50
       }
     },
-    "product_list_LpXqQX": {
+    "product_list_LzrBjh": {
       "type": "product-list",
       "blocks": {
         "static-header": {
@@ -346,7 +190,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_Kwmyyb": {
+            "group_RiW8EQ": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -386,7 +230,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "icon_TiEMEq": {
+                "icon_WfPNfw": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -398,7 +242,7 @@
                   },
                   "blocks": {}
                 },
-                "text_FfTHyj": {
+                "text_LBgEFX": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -426,11 +270,11 @@
                 }
               },
               "block_order": [
-                "icon_TiEMEq",
-                "text_FfTHyj"
+                "icon_WfPNfw",
+                "text_LBgEFX"
               ]
             },
-            "text_fhCjyw": {
+            "text_cjnWfc": {
               "type": "text",
               "name": "t:names.text",
               "settings": {
@@ -458,8 +302,8 @@
             }
           },
           "block_order": [
-            "group_Kwmyyb",
-            "text_fhCjyw"
+            "group_RiW8EQ",
+            "text_cjnWfc"
           ]
         },
         "static-product-card": {
@@ -480,7 +324,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "product_card_gallery_JCTpzL": {
+            "product_card_gallery_VFXcKf": {
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
@@ -496,7 +340,7 @@
               },
               "blocks": {}
             },
-            "product_title_HECCMe": {
+            "product_title_We7fjw": {
               "type": "product-title",
               "name": "t:names.product_title",
               "settings": {
@@ -521,7 +365,7 @@
               },
               "blocks": {}
             },
-            "price_HcQCNa": {
+            "price_U7HApD": {
               "type": "price",
               "name": "t:names.product_price",
               "disabled": true,
@@ -547,9 +391,9 @@
             }
           },
           "block_order": [
-            "product_card_gallery_JCTpzL",
-            "product_title_HECCMe",
-            "price_HcQCNa"
+            "product_card_gallery_VFXcKf",
+            "product_title_We7fjw",
+            "price_U7HApD"
           ]
         }
       },
@@ -576,9 +420,7 @@
     }
   },
   "order": [
-    "section",
-    "divider_NLjV6X",
-    "section_Xpgj3E",
-    "product_list_LpXqQX"
+    "main",
+    "product_list_LzrBjh"
   ]
 }
