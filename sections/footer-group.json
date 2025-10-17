@@ -18,7 +18,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Follow us on social for more pecan-<em>ness.</em></h2>",
+            "text": "<h2>Follow us on social for more nuttiness<em>.</em></h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "center",
@@ -757,7 +757,7 @@
                     "horizontal_alignment_flex_direction_column": "flex-start",
                     "vertical_alignment_flex_direction_column": "flex-start",
                     "gap": 12,
-                    "width": "fill",
+                    "width": "custom",
                     "custom_width": 33,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
@@ -780,24 +780,27 @@
                     "open_in_new_tab": false,
                     "placeholder": "",
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 50,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
                   "blocks": {
-                    "logo_ikxNzL": {
-                      "type": "logo",
-                      "name": "t:names.logo",
+                    "image_LgaAEJ": {
+                      "type": "image",
+                      "name": "t:names.image",
                       "settings": {
-                        "inverse": false,
-                        "font": "heading",
-                        "unit": "pixel",
-                        "percent_width": 100,
-                        "pixel_height": 48,
-                        "custom_mobile_size": false,
-                        "unit_mobile": "percent",
-                        "percent_width_mobile": 100,
-                        "pixel_height_mobile": 120,
+                        "image": "shopify://shop_images/durden-pecan-logo-oval.svg",
+                        "link": "",
+                        "image_ratio": "adapt",
+                        "width": "fit-content",
+                        "custom_width": 100,
+                        "width_mobile": "fill",
+                        "custom_width_mobile": 100,
+                        "height": "fit",
+                        "border": "none",
+                        "border_width": 1,
+                        "border_opacity": 100,
+                        "border_radius": 0,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -833,7 +836,7 @@
                     }
                   },
                   "block_order": [
-                    "logo_ikxNzL",
+                    "image_LgaAEJ",
                     "text_99nGe7"
                   ]
                 },
@@ -849,8 +852,8 @@
                     "horizontal_alignment_flex_direction_column": "center",
                     "vertical_alignment_flex_direction_column": "flex-start",
                     "gap": 12,
-                    "width": "fit-content",
-                    "custom_width": 100,
+                    "width": "custom",
+                    "custom_width": 50,
                     "width_mobile": "fill",
                     "custom_width_mobile": 100,
                     "height": "fill",
