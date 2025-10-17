@@ -134,7 +134,7 @@
       "settings": {
         "media_type_1": "video",
         "image_1": "shopify://shop_images/durden-pecan-farm-drone-shot.jpg",
-        "video_1": "shopify://files/videos/temp_video_for_share.mov",
+        "video_1": "shopify://files/videos/DurdenPecan_Hero.mp4",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -151,7 +151,7 @@
         "section_height_custom": 50,
         "color_scheme": "scheme-af54329b-8728-4c1d-a971-4c8fe438e757",
         "toggle_overlay": true,
-        "overlay_color": "#0000008f",
+        "overlay_color": "#00000059",
         "overlay_style": "solid",
         "gradient_direction": "to bottom",
         "blurred_reflection": false,

@@ -1281,7 +1281,7 @@ results-list[initialized] {
 
 /* Buttons */
 .button,
-.button-secondary:not(.accelerated-checkout-block),
+.button-secondary,
 button.shopify-payment-button__button--unbranded {
   --text-align: center;
 
@@ -1314,11 +1314,11 @@ button.shopify-payment-button__button--unbranded {
   border-radius: var(--style-border-radius-buttons-primary);
 }
 
-.button:not(.button-secondary, .button-unstyled, .accelerated-checkout-block) {
+.button:not(.button-secondary, .button-unstyled) {
   outline-color: var(--button-background-color);
 }
 
-.button-secondary:not(.accelerated-checkout-block) {
+.button-secondary {
   font-family: var(--button-font-family-secondary);
   text-transform: var(--button-text-case-secondary);
   border-radius: var(--style-border-radius-buttons-secondary);
