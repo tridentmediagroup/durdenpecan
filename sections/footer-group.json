@@ -807,37 +807,10 @@
                         "padding-inline-end": 0
                       },
                       "blocks": {}
-                    },
-                    "text_99nGe7": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<p>Georgia's best farm-fresh pecans — guaranteed.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "custom",
-                        "font": "var(--font-body--family)",
-                        "font_size": "0.875rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "balance",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
                     }
                   },
                   "block_order": [
-                    "image_LgaAEJ",
-                    "text_99nGe7"
+                    "image_LgaAEJ"
                   ]
                 },
                 "group_AjELgj": {
