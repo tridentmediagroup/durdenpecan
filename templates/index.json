@@ -1146,7 +1146,7 @@
       "blocks": {
         "group_keWU4N": {
           "type": "group",
-          "name": "Title Group",
+          "name": "Row",
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": true,
@@ -1186,7 +1186,7 @@
           "blocks": {
             "group_aBDMHf": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Section Heading",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1368,9 +1368,9 @@
                 "text_yzjUXe"
               ]
             },
-            "group_DcXhzP": {
+            "group_DNkVy6": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Review",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1408,78 +1408,33 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_nA7DVa": {
-                  "type": "group",
-                  "name": "t:names.group",
+                "text_3UM3Jz": {
+                  "type": "text",
+                  "name": "t:names.text",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
+                    "text": "<h3>Donna B.</h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
-                  "blocks": {
-                    "text_aTM6bR": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h3>John R.</h3>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "h5",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_aTM6bR"
-                  ]
+                  "blocks": {}
                 },
-                "icon_h3ybWV": {
+                "icon_4Xhhp9": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -1491,11 +1446,11 @@
                   },
                   "blocks": {}
                 },
-                "text_EnGNf9": {
+                "text_fLqUeR": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><em>\"Just got my first order of Durden pecans. They truly are the best I have ever eaten. They are so fresh and the flavor just bursts as you munch! We're making roasted cinnamon pecans and pies so must order more!\"</em></p>",
+                    "text": "<p><em>\"Great company, great pecans! I get pecans every year and gift them at Christmas to my family.\"</em></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1516,50 +1471,23 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "text_9gALN6": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Tampa Bay, FL</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h5",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-primary)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "group_nA7DVa",
-                "icon_h3ybWV",
-                "text_EnGNf9",
-                "text_9gALN6"
+                "text_3UM3Jz",
+                "icon_4Xhhp9",
+                "text_fLqUeR"
               ]
             }
           },
           "block_order": [
             "group_aBDMHf",
-            "group_DcXhzP"
+            "group_DNkVy6"
           ]
         },
         "group_4QryJm": {
           "type": "group",
-          "name": "t:names.group",
+          "name": "Row",
           "settings": {
             "content_direction": "row",
             "vertical_on_mobile": true,
@@ -1597,9 +1525,9 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_WCPpCf": {
+            "group_W9X8yY": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Review",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1637,78 +1565,33 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_Ai8H93": {
-                  "type": "group",
-                  "name": "t:names.group",
+                "text_7h43hj": {
+                  "type": "text",
+                  "name": "t:names.text",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
+                    "text": "<h3>Lynette B.</h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
-                  "blocks": {
-                    "text_mtRzPY": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h3>John R.</h3>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "h5",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_mtRzPY"
-                  ]
+                  "blocks": {}
                 },
-                "icon_4Xhhp9": {
+                "icon_h3ybWV": {
                   "type": "icon",
                   "name": "t:names.icon",
                   "settings": {
@@ -1720,11 +1603,11 @@
                   },
                   "blocks": {}
                 },
-                "text_fLqUeR": {
+                "text_EnGNf9": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><em>\"Just got my first order of Durden pecans. They truly are the best I have ever eaten. They are so fresh and the flavor just bursts as you munch! We're making roasted cinnamon pecans and pies so must order more!\"</em></p>",
+                    "text": "<p><em>\"Best pecans around. Love going to their business in Metter.\"</em></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1746,9 +1629,10 @@
                   },
                   "blocks": {}
                 },
-                "text_VxYQUi": {
+                "text_9gALN6": {
                   "type": "text",
                   "name": "t:names.text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Tampa Bay, FL</p>",
                     "width": "fit-content",
@@ -1774,15 +1658,15 @@
                 }
               },
               "block_order": [
-                "group_Ai8H93",
-                "icon_4Xhhp9",
-                "text_fLqUeR",
-                "text_VxYQUi"
+                "text_7h43hj",
+                "icon_h3ybWV",
+                "text_EnGNf9",
+                "text_9gALN6"
               ]
             },
             "group_znJG6M": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Review",
               "settings": {
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1820,76 +1704,31 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "group_7jG68t": {
-                  "type": "group",
-                  "name": "t:names.group",
+                "text_dVYEnF": {
+                  "type": "text",
+                  "name": "t:names.text",
                   "settings": {
-                    "content_direction": "row",
-                    "vertical_on_mobile": false,
-                    "horizontal_alignment": "flex-start",
-                    "vertical_alignment": "center",
-                    "align_baseline": false,
-                    "horizontal_alignment_flex_direction_column": "flex-start",
-                    "vertical_alignment_flex_direction_column": "center",
-                    "gap": 12,
-                    "width": "fill",
-                    "custom_width": 100,
-                    "width_mobile": "fill",
-                    "custom_width_mobile": 100,
-                    "height": "fit",
-                    "custom_height": 100,
-                    "inherit_color_scheme": true,
-                    "color_scheme": "",
-                    "background_media": "none",
-                    "video_position": "cover",
-                    "background_image_position": "cover",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "toggle_overlay": false,
-                    "overlay_color": "#00000026",
-                    "overlay_style": "solid",
-                    "gradient_direction": "to top",
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "placeholder": "",
+                    "text": "<h3>Lynn L.</h3>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
-                  "blocks": {
-                    "text_KheBki": {
-                      "type": "text",
-                      "name": "t:names.text",
-                      "settings": {
-                        "text": "<h3>John R.</h3>",
-                        "width": "fit-content",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "h5",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_KheBki"
-                  ]
+                  "blocks": {}
                 },
                 "icon_cJUeNB": {
                   "type": "icon",
@@ -1907,7 +1746,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><em>\"Just got my first order of Durden pecans. They truly are the best I have ever eaten. They are so fresh and the flavor just bursts as you munch! We're making roasted cinnamon pecans and pies so must order more!\"</em></p>",
+                    "text": "<p><em>\"We’ve aways had great experiences at Durden’s, whether buying, selling or just having some pecans cracked. Very nice folks.\"</em></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1928,112 +1767,24 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "text_cWAcYt": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Tampa Bay, FL</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h5",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-primary)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "group_7jG68t",
+                "text_dVYEnF",
                 "icon_cJUeNB",
-                "text_3cwAnG",
-                "text_cWAcYt"
+                "text_3cwAnG"
               ]
             }
           },
           "block_order": [
-            "group_WCPpCf",
+            "group_W9X8yY",
             "group_znJG6M"
-          ]
-        },
-        "group_QFGKaM": {
-          "type": "group",
-          "name": "CTA",
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "link": "",
-            "open_in_new_tab": false,
-            "placeholder": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "button_jEpNae": {
-              "type": "button",
-              "name": "t:names.button",
-              "settings": {
-                "label": "Read More Reviews",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "button_jEpNae"
           ]
         }
       },
       "block_order": [
         "group_keWU4N",
-        "group_4QryJm",
-        "group_QFGKaM"
+        "group_4QryJm"
       ],
       "name": "Reviews",
       "settings": {
@@ -2377,6 +2128,86 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "accordion_row_3maWcH": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How are your pecans packaged?",
+                "open_by_default": true,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_rdWHei": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>We package our Baker’s Blend, Pieces, and Halves in one pound air tight sealed cellophane bags.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_rdWHei"
+              ]
+            },
+            "accordion_row_CWgxVX": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Where do you get your pecans?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_kP6gGn": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>All of our pecans come from local growers as well as our own family owned farm right here in Georgia.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_kP6gGn"
+              ]
+            },
             "accordion_row_TaFKCp": {
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
@@ -2500,6 +2331,8 @@
             }
           },
           "block_order": [
+            "accordion_row_3maWcH",
+            "accordion_row_CWgxVX",
             "accordion_row_TaFKCp",
             "accordion_row_LQB47g",
             "accordion_row_6BBJFN"

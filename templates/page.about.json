@@ -17,7 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/durden-pecan-Kyle-and-Sonia.jpg",
+            "image": "shopify://shop_images/durden-pecan-Kyle-and-Sonya.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -1554,7 +1554,7 @@
               "type": "text",
               "name": "Description",
               "settings": {
-                "text": "<p>Once the nuts are on the ground, a machine called a sweeper ( kind of like a street sweeper) sweeps the pecans into rows then a mechanical Harvester comes along and sucks them all up along with some leaves, sticks and occasional rock. So the farmer dumps all of this into a wagon and brings it to us.</p>",
+                "text": "<p>Once the nuts are on the ground, a machine called a sweeper (kind of like a street sweeper) sweeps the pecans into rows then a mechanical Harvester comes along and sucks them all up along with some leaves, sticks and occasional rock. So the farmer dumps all of this into a wagon and brings it to us.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
