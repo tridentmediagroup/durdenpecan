@@ -164,8 +164,10 @@
 
   .cart-drawer__summary {
     background-color: var(--color-background);
-    position: sticky;
-    bottom: 0;
     z-index: 1;
+    @media screen and (min-width: 1200px) {
+      position: sticky;
+      bottom: 0;
+    }
   }
 {% endstylesheet %}
